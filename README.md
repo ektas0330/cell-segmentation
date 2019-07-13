@@ -18,19 +18,19 @@ Implemented with:
 * Python 3.5.5 
 
 ## Code
-1. Create a 'data' folder in the cell-segmentation-master directory. Create sub-folders 'src' and 'label' in the data folder and place all the source images and the corresponding labels in the src and label folders respective
+1. Create a 'data' folder in the cell-segmentation-master directory. Create sub-folders 'src' and 'label' in the data folder and place all the dataset images and the corresponding labels in the src and label folders respectively.
 2. Run gen_img_aug.py to split the data into training and test sets.
 3. Run pre_processing.py to perform pre-processing on the training set.
 4. Run train_unet_xception_resnetblock.py to train the model. The model is saved when the validation loss reaches its minimum and is named as unet_xception_resnet_nsgd32_lovaszsoftmax_best.h5.
-5. Run predict_lovasz_loss.py to generate segmentation masks for the test images using the saved model
-6. Run get_contour.py to detect the contours of the segmented regions and overlay them on the original image
+5. Run predict_lovasz_loss.py to generate segmentation masks for the test images using the saved model.
+6. Run get_contour.py to detect the contours of the segmented regions and overlay them on the original image.
 
 ## Acknowledgement
 * The code for the model is built on the code by [Siddharta](https://github.com/sidml/Image-Segmentation-Challenge-Kaggle) proposed in the [TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge) hosted by Kaggle.
-* Implementation of the Lovasz Softmax loss is as provided by [Maxim Berman](https://github.com/bermanmaxim/LovaszSoftmax)
+* Implementation of the Lovasz Softmax loss is as provided by [Maxim Berman](https://github.com/bermanmaxim/LovaszSoftmax).
 
 ## Citation
-Please cite the following paper if the code is found useful
+Please cite the following paper if the code is found useful.
 
 ```bash
 @article{samani2019deep,
