@@ -30,7 +30,7 @@ Implemented with:
 * Implementation of the Lovasz Softmax loss is as provided by [Maxim Berman](https://github.com/bermanmaxim/LovaszSoftmax).
 
 ## Citation
-Please cite the following paper if the code is found useful.
+Please cite the following paper if the code is useful.
 
 ```bash
 @article{samani2019deep,
